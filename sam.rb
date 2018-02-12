@@ -1,6 +1,6 @@
-puts "Dog, cat, or horse: "
+puts "Dog, cat, lizard, or horse: "
 animal = gets.chomp
-animal = animal.downcase
+animal.downcase!
 case animal
 	when "dog"
 		"Woof"
@@ -8,6 +8,8 @@ case animal
 		"Meow"
 	when "horse"
 		"Neigh"
+	when "snake"
+		'hisss'
 	else
 		"Not an answer."
 end
